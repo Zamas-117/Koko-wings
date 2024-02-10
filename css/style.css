@@ -254,3 +254,8 @@ img.card-img
 {
     padding: 16px 8px 0px 16px;
 }
+
+#contenidoVentana
+{
+    padding-bottom: 110px;
+}

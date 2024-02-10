@@ -9,15 +9,18 @@ function cargarImagenes(categoria) {
         case 'Ofertas':
              contenidoVentana.innerHTML +=titulosIniciales("OFERTAS");
             contenidoVentana.innerHTML+=mostrarTodasLasOfertas();
+            contenidoVentana.innerHTML+=mostrarMenuSalsas("salsas/salsas.png");
             break;
         case 'Boneles':
             contenidoVentana.innerHTML +=titulosIniciales("BONELESS");
             contenidoVentana.innerHTML+=mostrarTodosLosBoneles();
+            contenidoVentana.innerHTML+=mostrarMenuSalsas("salsas/salsas.png");
             break;
 
         case 'Alitas':
             contenidoVentana.innerHTML +=titulosIniciales("ALITAS");
-            contenidoVentana.innerHTML+=mostrarTodasLasOfertas();
+            contenidoVentana.innerHTML+=mostrarTodasLasAlitas();
+            contenidoVentana.innerHTML+=mostrarMenuSalsas("salsas/salsas.png");
         
         break;
 
@@ -119,6 +122,16 @@ function insertarContenidoImagen_url(nombre_producto, descripcion,precio)
     "</div>";
 
      // Devuelve el fragmento 
+    return htmlFragment;
+}
+
+function mostrarMenuSalsas(url_imagen) 
+{
+    var htmlFragment = "<div class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body frasecentral '>" +
+    "<img src='images/" + url_imagen + "' class='card-img' alt='Oferta' style='width:200px; height:auto;'>" +
+    "</div>" +
+    "</div>";
+
     return htmlFragment;
 }
 
@@ -251,35 +264,34 @@ function mostrarApartadoHamburguesaSeleccion() {
 function mostrarTodasLasOfertas()
 {
     var retornarOfertas ="";
-    retornarOfertas += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+
+    retornarOfertas += insertarImagen_url("hamburguesas/sirlonSencilla.png")
+    + insertarContenidoImagen_url("Combo 1", "Sirloin Sencilla + papas chicas + soda de sabor"," $95");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    + insertarContenidoImagen_url("Combo 2", "Boneless Chicos + papas chicas + soda de sabor"," $140");
+
+    retornarOfertas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Combo 3", "(10 pz) Alitas + papas chicas + soda de sabor"," $130");
+
+    retornarOfertas += insertarImagen_url("hotdog/hotdog_logo.png")
+    + insertarContenidoImagen_url("Combo 4", "2 Hotdogs + papas chicas + soda de sabor"," $110");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    + insertarContenidoImagen_url("Boneless Grandes", "(910 gr) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    + insertarContenidoImagen_url("Boneless Extra Grandes", "(1.30 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    + insertarContenidoImagen_url("Boneless Familiares", "(1.60 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
 
-    retornarOfertas += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+    retornarOfertas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas", "(40 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
 
-    retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarOfertas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas", "(50 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!","precio");
 
-    retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
 
     return retornarOfertas;
 }
@@ -288,19 +300,19 @@ function mostrarTodosLosBoneles()
 {
     var retornarBoneles="";
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Chico (310 g)", "descripcion","$95");
+    + insertarContenidoImagen_url("Chico (310 gr)", "Zanahorias con aderezo Ranch + Apio","$95");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Mediano (610 g)", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $185");
+    + insertarContenidoImagen_url("Mediano (610 gr)", "Zanahorias con aderezo Ranch + Apio"," $185");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Grande (910 g)", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $280");
+    + insertarContenidoImagen_url("Grande (910 gr)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $280");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Extra Grande (1.30 kg)", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $375");
+    + insertarContenidoImagen_url("Extra Grande (1.30 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $375");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Familiar (1.60 kg)", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $470");
+    + insertarContenidoImagen_url("Familiar (1.60 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $470");
 
     return retornarBoneles;
 }
@@ -308,20 +320,29 @@ function mostrarTodosLosBoneles()
 function mostrarTodasLasAlitas()
 {
     var retornarAlitas="";
-    retornarAlitas += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (10 pz)", "Zanahorias con aderezo Ranch + Apio + 2 salsas ","$90");
 
-    retornarAlitas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (12 pz)", "Zanahorias con aderezo Ranch + Apio + 2 salsas ","$100");
 
-    retornarAlitas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (16 pz)", "Zanahorias con aderezo Ranch + Apio + 2 salsas","$138");
 
-    retornarAlitas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (20 pz) ", "Zanahorias con aderezo Ranch + Apio + 3 salsas","$172");
 
-    retornarAlitas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (26 pz)", "Zanahorias con aderezo Ranch + Apio + 3 salsas","$226");
+
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (30pz)", "Zanahorias con aderezo Ranch + Apio + 3 salsas","$260");
+
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (40 pz)", "Zanahorias con aderezo Ranch + Apio + 4 salsas","$348");
+
+    retornarAlitas += insertarImagen_url("alitas/alitas.png")
+    + insertarContenidoImagen_url("Alitas (50 pz)", "Zanahorias con aderezo Ranch + Apio + 4 salsas","$435");
 
     return retornarAlitas;
 }
@@ -376,7 +397,7 @@ function mostrarTodasLasHamburguesasLibra()
     + insertarContenidoImagen_url("Sirloin BBQ/Mango Habanero", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $83");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/kokoburger.png")
-    + insertarContenidoImagen_url("KOKO Burger", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $103");
+    + insertarContenidoImagen_url("KOKO Burger", "50 gr de boneles 10 gramos de zanahoria 2 ranchs"," $103");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonconpollo.png")
     + insertarContenidoImagen_url("Sirlon con Pollo", "descripcion","$103");
@@ -390,36 +411,33 @@ function mostrarTodasLasPapasFritas()
 {
     var retornarPapasFritas="";
     retornarPapasFritas += insertarImagen_url("papasfritas/papas_logo.png")
-    + insertarContenidoImagen_url("Papas Chicas", "descripcion","$30");
+    + insertarContenidoImagen_url("Papas Chicas (150 gr)", "","$30");
 
     retornarPapasFritas += insertarImagen_url("papasfritas/papas_logo.png")
-    + insertarContenidoImagen_url("Papas Medianas", "descripcion","$50");
+    + insertarContenidoImagen_url("Papas Medianas (300 gr)", "","$50");
 
     retornarPapasFritas += insertarImagen_url("papasfritas/papas_logo.png")
-    + insertarContenidoImagen_url("Papas Grandes", "descripcion","$73");
+    + insertarContenidoImagen_url("Papas Grandes (450 gr)", "","$73");
 
     retornarPapasFritas += insertarImagen_url("papasfritas/papas_logo.png")
-    + insertarContenidoImagen_url("Papas Familiares", "descripcion","$99");
+    + insertarContenidoImagen_url("Papas Familiares (600 gr)", "","$99");
     return retornarPapasFritas;
 }
 
 function mostrarTodasLosHotDogs()
 {
     var retornarHotDogs="";
-    retornarHotDogs += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+    retornarHotDogs += insertarImagen_url("hotdog/hotdog_logo.png")
+    + insertarContenidoImagen_url("Hot dog sencillo", "Mostaza + Ketchup + Mayonesa + Tomate + Curtidos","$25");
 
-    retornarHotDogs += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarHotDogs += insertarImagen_url("hotdog/hotdog_logo.png")
+    + insertarContenidoImagen_url("Dogo Cheese", "Mostaza + Ketchup + Mayonesa + (Rufles, queso para nachos y tocino)","$35");
 
-    retornarHotDogs += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+   retornarHotDogs += insertarImagen_url("hotdog/banderilla.png")
+    + insertarContenidoImagen_url("Banderillas", "mostaza + Ketchup + Mayonesa ","$35");
 
-    retornarHotDogs += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarHotDogs += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarHotDogs += insertarImagen_url("hotdog/dedosQueso.png")
+    + insertarContenidoImagen_url("Dedos de queso", "(4 pz) + Ketchup","$50");
 
     return retornarHotDogs;
 }
