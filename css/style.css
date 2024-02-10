@@ -1,0 +1,256 @@
+.navbar {
+    position: fixed;
+    top: 0%;
+    flex-wrap: nowrap;
+    z-index: 99999;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-control 
+{
+    width: 60%; /* Ancho máximo */
+    min-width: 0;
+}
+
+.list-group1
+{
+    margin-bottom: 110px;
+}
+
+.list-group
+{
+    margin-top: 90px;
+}
+
+.card-body 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card-img 
+{
+    width: auto;
+    height: 80px;
+    background-color: none;
+    margin-right: 10px;
+}
+
+.card-title 
+{
+    margin: 0;
+}
+
+.card-row 
+{
+    margin: 0;
+    margin-left: auto; /* Push it to the right */
+}
+
+.nav-tabs 
+{
+    --bs-nav-tabs-border-width: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap
+}
+
+.nav-footer 
+{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 4px 0;
+    z-index: 99999;
+    box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    font-size: 1.2em;
+}
+
+.nav-link
+{
+    color: #6c757d;
+}
+
+.logo_principal
+{
+    height: 60px;
+}
+
+.list-group-item
+{
+    /* anterior 
+        background-color: var(--bs-list-group-bg);
+        border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+    */
+    background-color:white;
+    border:white;
+}
+
+img.card-img
+{
+    width: 80px;
+}
+
+.btn-outline-success
+{
+        /* --bs-btn-color: #198754; */
+    /* --bs-btn-border-color: #198754;*/
+    --bs-btn-color: none;
+    --bs-btn-border-color: none;
+}
+
+.btn:hover
+{
+    color: black;
+    background-color: #e9ecef;
+    border-color: black;
+}
+
+.btn-outline-success
+{
+    --bs-btn-active-bg: none;
+}
+
+.d-flex
+{
+    margin-left: 10%;
+}
+
+
+.div-autor
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.div-autor p{
+    text-align: center; 
+    font-size:0.6em;
+    margin-bottom: 1px;
+}
+
+.nav-link p{
+    margin-bottom: 0;
+}
+
+
+/* Animacion para la superpocion de pantalla*/
+.ventana {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
+    margin-bottom: 2000px;
+}
+
+.cerrar {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.precio
+{
+    margin-right: 20px;
+}
+
+.frasecentral
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 9px;
+}
+
+
+/*APARTADO HAMBURGUESAS*/
+.menu-hamburguesa {
+    text-decoration: none;
+    
+    font-size: 1.3em;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 10% 10px 10%;
+}
+
+.card-body-hamburguesa {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.hamburguesa1, .hamburguesa2 {
+    padding: 25px auto 25px auto;
+    background-color: white;
+}
+
+.hamburguesa2 {
+    border: none; 
+    border-left: 2px solid black;
+    padding-right: 0%;
+    padding-left: 5%;
+    margin-right: 10px;
+}
+.hamburguesa1
+{
+    margin-left: 10px;
+    padding-right: 5%;
+    padding-left: 0%;
+}
+
+.seleccionado {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+@media (max-width: 380px) {
+    .hamburguesa1, .hamburguesa2 {
+        font-size: 0.7em;
+    }
+    .hamburguesa1 {
+        padding-right: 2%;
+    }
+    .hamburguesa1 {
+        padding-left: 2%;
+    }
+
+    .seleccionado {
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+}
+
+.list-group-item-primary 
+{
+    --bs-list-group-bg: none;
+    --bs-list-group-border-color: none;
+    --bs-list-group-action-hover-bg:none;
+    --bs-list-group-action-active-color: none;
+    --bs-list-group-action-active-bg: none;
+    --bs-list-group-active-color: none;
+}
+
+.redes
+{
+    padding: 16px 8px 0px 16px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <!-- BILBIOTECA BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- STYLES SHEETS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/iconos/logo_gallo_icono.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img class="logo_principal" src="images/iconos/logo_icono.png" alt=""></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" oninput="filtrarComidas(this.value)">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="list-group list-group1" id="ventana_inicial">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Ofertas')">
+            <div class="card-body">
+              <img src="images/oferta/logo_oferta.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Ofertas</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Boneles')">
+            <div class="card-body">
+              <img src="images/boneles/boneles_logo.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Boneles</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Alitas')">
+            <div class="card-body">
+              <img src="images/alitas/alitas.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Alitas</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Hamburguesas')">
+            <div class="card-body">
+              <img src="images/hamburguesas/baconeitor.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Hamburguesas</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Papas')">
+            <div class="card-body">
+              <img src="images/papasfritas/papas_logo.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Papas fritas</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('HotDogs')">
+            <div class="card-body">
+              <img src="images/hotdog/hotdog_logo.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Hotdogs</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Bebidas')">
+            <div class="card-body">
+              <img src="images/bebidas/cocacola.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Bebidas</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+        
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" onclick="mostrarVentana('Extras')">
+            <div class="card-body">
+              <img src="images/extras/extra_logo.png" class="card-img" alt="Oferta">
+              <h5 class="card-title">Extras</h5>
+              <p class="card-row"><small class="text-body-secondary"><i class="fa-solid fa-arrow-right"></i></small></p>
+            </div>
+          </a>
+
+      </div>
+
+      <div id="ventana" class="ventana">
+
+
+        <span class="cerrar" onclick="cerrarVentana()">&times;</span>
+        <!-- Contenido de tu pantalla en blanco -->
+        <div id="contenidoVentana">
+          
+        </div>
+      </div>
+
+    <!-- ICONOS INFERIORES-->
+    <div class="list-group nav-footer">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="contactanosRedesSociales()"><i class="fa-solid fa-users"></i><p>Contactanos</p></button>
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="cerrarVentana()"><i class="fa-solid fa-house"></i><p>Inicio</p></button>
+            
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link" id="v-pills-home-tab " data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="compartirRedesSociales()"><i class="fa-solid fa-share-nodes"></i><p>Compartir</p></button>
+            
+        </li>
+      </ul>
+      <div class="div-autor">
+        <p>© <script>document.write(new Date().getFullYear())</script> All rights reserved | Zamas 117</p>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT-->
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c75f30fc9e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
