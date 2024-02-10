@@ -278,23 +278,23 @@ function mostrarTodasLasOfertas()
     + insertarContenidoImagen_url("Combo 4", "2 Hotdogs + papas chicas + soda de sabor"," $110");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Boneless Grandes", "(910 gr) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
+    + insertarContenidoImagen_url("Boneless Grandes", "(910 gr) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $280");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Boneless Extra Grandes", "(1.30 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
+    + insertarContenidoImagen_url("Boneless Extra Grandes", "(1.30 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $375");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Boneless Familiares", "(1.60 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
+    + insertarContenidoImagen_url("Boneless Familiares", "(1.60 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $470");
 
     retornarOfertas += insertarImagen_url("alitas/alitas.png")
-    + insertarContenidoImagen_url("Alitas", "(40 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $60");
+    + insertarContenidoImagen_url("Alitas", "(40 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $348");
 
     retornarOfertas += insertarImagen_url("alitas/alitas.png")
-    + insertarContenidoImagen_url("Alitas", "(50 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!","precio");
-
+    + insertarContenidoImagen_url("Alitas", "(50 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!","$435");
 
     return retornarOfertas;
 }
+
 
 function mostrarTodosLosBoneles()
 {
