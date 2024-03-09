@@ -477,18 +477,6 @@ function mostrarExtras()
     retornarExtras += insertarImagen_url("extras/ranch.png")
     + insertarContenidoImagen_url("Ranch", "","$10");
 
-    retornarExtras += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarExtras += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarExtras += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarExtras += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
     return retornarExtras;
 }
 
