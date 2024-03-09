@@ -87,6 +87,7 @@ function mostrarVentana(contenido) {
     // Muestra la ventana modal
     ventana.style.display = "block";
 }
+
   
 function cerrarVentana() 
 {
@@ -139,7 +140,7 @@ function mostrarMenuSalsas(url_imagen)
 
 
 //COMPARTIR REDES SOCIALES
-var sharedURL = "http://127.0.0.1:5500/#"; // Definir la URL compartida como una variable global
+var sharedURL = "kokowings.netlify.app"; // Definir la URL compartida como una variable global
 
 function compartirRedesSociales() {
     var ventana = document.getElementById("ventana");
@@ -159,28 +160,28 @@ function ventanaRedesSociales() {
 
     var htmlFragment = titulosIniciales("COMPARTIR");
 
-        htmlFragment += "<a href='https://www.facebook.com/sharer/sharer.php?u=" + sharedURL + "' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
+        htmlFragment += "<a href='https://www.facebook.com/sharer/sharer.php?u=" + sharedURL + "' onclick='copyTextToClipboard(sharedURL)' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
         "<img src='images/redes/fb.png' class='card-img' alt='Facebook'>" +
         "<h5 class='card-title'> Facebook</h5>" +
         "</div>" +
         "</a>";
 
         //URL WHATS
-        htmlFragment += "<a href='https://api.whatsapp.com/send?text=" + sharedURL + "' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
+        htmlFragment += "<a href='https://api.whatsapp.com/send?text=" + sharedURL + "' onclick='copyTextToClipboard(sharedURL)' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
         "<img src='images/redes/wsp.png' class='card-img' alt='Whatssap'>" +
         "<h5 class='card-title'> Whatssap</h5>" +
         "</div>" +
         "</a>";
 
         //URL TIKTOK
-        htmlFragment += "<a href='https://www.tiktok.com/upload/?reference=" + sharedURL + "' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
+        htmlFragment += "<a href='https://www.tiktok.com/upload/?reference=" + sharedURL + "' onclick='copyTextToClipboard(sharedURL)' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
         "<img src='images/redes/tk.png' class='card-img' alt='Tiktok'>" +
         "<h5 class='card-title'> Tiktok </h5>" +
         "</div>" +
         "</a>";
 
         //URL INSTAGRAM
-        htmlFragment += "<a href='https://www.instagram.com/share?url=" + sharedURL + "' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
+        htmlFragment += "<a href='https://www.instagram.com/share?url=" + sharedURL + "' onclick='copyTextToClipboard(sharedURL)' class='list-group-item list-group-item-action list-group-item-primary redes' target='_blank'><div class='card-body'>" +
         "<img src='images/redes/igm.png' class='card-img' alt='Instagram'>" +
         "<h5 class='card-title'> Instagram </h5>" +
         "</div>" +
@@ -188,6 +189,16 @@ function ventanaRedesSociales() {
     // Devuelve el fragmento
     return htmlFragment;
 }
+
+function copyTextToClipboard(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Link copiado!");  // Optional: Success message
+      })
+      .catch(err => {
+        console.error("Failed to copy link:", err);  // Optional: Error handling
+      });
+  }
 
 
 //CONTACRANOS
@@ -445,20 +456,17 @@ function mostrarTodasLosHotDogs()
 function mostrarTodasLasBebidas()
 {
     var retornarBebidas="";
-    retornarBebidas += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+    retornarBebidas += insertarImagen_url("bebidas/kool-aid.png")
+    + insertarContenidoImagen_url("Kool Aid", "","$12");
 
-    retornarBebidas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarBebidas += insertarImagen_url("bebidas/shasta.png")
+    + insertarContenidoImagen_url("Shasta", ""," $17");
 
-    retornarBebidas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarBebidas += insertarImagen_url("bebidas/coca-cola.png")
+    + insertarContenidoImagen_url("Coca-Cola", ""," $25");
 
-    retornarBebidas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-
-    retornarBebidas += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
+    retornarBebidas += insertarImagen_url("bebidas/agua-ciel.png")
+    + insertarContenidoImagen_url("Agua (1 lt)", ""," $18");
 
     return retornarBebidas;
 }
@@ -466,8 +474,8 @@ function mostrarTodasLasBebidas()
 function mostrarExtras()
 {
     var retornarExtras="";
-    retornarExtras += insertarImagen_url("oferta/logo_oferta.png")
-    + insertarContenidoImagen_url("nombre_producto", "descripcion","precio");
+    retornarExtras += insertarImagen_url("extras/ranch.png")
+    + insertarContenidoImagen_url("Ranch", "","$10");
 
     retornarExtras += insertarImagen_url("boneles/boneles_logo.png")
     + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
