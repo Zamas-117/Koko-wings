@@ -484,8 +484,11 @@ function mostrarExtras()
     retornarExtras += insertarImagen_url("extras/salchicha.png")
     + insertarContenidoImagen_url("Salchicha", "","$15");
 
+    retornarExtras += insertarImagen_url("extras/bonelesnaturales.png")
+    + insertarContenidoImagen_url("Boneless", "","$30");
+
     retornarExtras += insertarImagen_url("extras/salsas.png")
-    + insertarContenidoImagen_url("Salsa", "Escojer","$15");
+    + insertarContenidoImagen_url("Salsa", "Escojer","$10");
     
     retornarExtras+=mostrarMenuSalsas("salsas/salsas.png");
 
