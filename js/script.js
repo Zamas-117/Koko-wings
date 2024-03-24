@@ -363,32 +363,29 @@ function mostrarTodasLasHamburguesas()
 {
     var retornarhamburguesas="";
     retornarhamburguesas += insertarImagen_url("hamburguesas/sirlonSencilla.png")
-    + insertarContenidoImagen_url("Sirlon", "descripcion","$58");
+    + insertarContenidoImagen_url("Sirlon", "Mayonesa + Ketchup + Mostaza + Lechuga + Cebolla + Tomate + Queso","$58");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/sirlondoble.png")
-    + insertarContenidoImagen_url("Sirlon Doble", "descripcion"," $69");
+    + insertarContenidoImagen_url("Sirlon Doble", "3 Liquidos + Lechuga + Cebolla + Tomate +  2 Quesos + 2 Carnes"," $69");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/baconCheese.png")
-    + insertarContenidoImagen_url("Bacon Cheese", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $78");
+    + insertarContenidoImagen_url("Bacon Cheese", "Mayonesa + Queso Derretido + Jalapeño + Queso"," $78");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/sirlonBBQMango.png")
-    + insertarContenidoImagen_url("Sirlon BBQ/Mango Habanero", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $78");
+    + insertarContenidoImagen_url("Sirlon BBQ/Mango Habanero", "Mayonesa + BBQ + Mango Habanero + Doble Tocino + Jamon + 2 Quesos"," $78");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/hamburgesadepollo.png")
-    + insertarContenidoImagen_url("Hamburguesa de Pollo", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $78");
+    + insertarContenidoImagen_url("Hamburguesa de Pollo", "Mayonesa + Ketchup + Lechuga + Tomate + Pollo"," $78");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/sirlontriple.png")
-    + insertarContenidoImagen_url("Sirlon Triple", "descripcion"," $83");
+    + insertarContenidoImagen_url("Sirlon Triple", "3 Liquidos + Lechuga + Cebolla + Tomate +  Doble Tocino + Winnie Americano + Jamon + Queso + Carne + Aguacate"," $83");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/kokoburger.png")
-    + insertarContenidoImagen_url("KOKO Burger", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $96");
+    + insertarContenidoImagen_url("KOKO Burger", "3 Liquidos + Lechuga + Cebolla + Tomate + Queso Derretido + Salsicha para Asar + Doble Tocino + Queso + Carne + Aguacate"," $96");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/sirlonconpollo.png")
-    + insertarContenidoImagen_url("Sirlon con Pollo", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $96");
+    + insertarContenidoImagen_url("Sirlon con Pollo",  "Mayonesa + Ketchup + Lechuga + Tomate + Pollo + Queso + Carne"," $96");
 
-    retornarhamburguesas += insertarImagen_url("hamburguesas/sirlonconpollo.png")
-    + insertarContenidoImagen_url("boneles", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $60");
-    
     return retornarhamburguesas;
 }
 
@@ -396,25 +393,23 @@ function mostrarTodasLasHamburguesasLibra()
 {
     var retornarhamburguesasLibra="";
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonSencilla.png")
-    + insertarContenidoImagen_url("Sirlon", "descripcion","$64");
+    + insertarContenidoImagen_url("Sirlon", "Mayonesa + Ketchup + Mostaza + Lechuga + Cebolla + Tomate + Queso","$64");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlondoble.png")
-    + insertarContenidoImagen_url("Sirlon Doble", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $79");
+    + insertarContenidoImagen_url("Sirlon Doble", "3 Liquidos + Lechuga + Cebolla + Tomate +  2 Quesos + 2 Carnes"," $79");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/baconCheese.png")
-    + insertarContenidoImagen_url("Bacon Cheese", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $83");
+    + insertarContenidoImagen_url("Bacon Cheese", "Mayonesa + Queso Derretido + Jalapeño + Queso"," $83");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonBBQMango.png")
-    + insertarContenidoImagen_url("Sirloin BBQ/Mango Habanero", "50g de boneles 10 gramos de zanahoria 2 ranchs"," $83");
+    + insertarContenidoImagen_url("Sirloin BBQ/Mango Habanero",  "Mayonesa + BBQ + Mango Habanero + Doble Tocino + Jamon + 2 Quesos"," $83");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/kokoburger.png")
-    + insertarContenidoImagen_url("KOKO Burger", "50 gr de boneles 10 gramos de zanahoria 2 ranchs"," $103");
+    + insertarContenidoImagen_url("KOKO Burger", "3 Liquidos + Lechuga + Cebolla + Tomate + Queso Derretido + Salsicha para Asar + Doble Tocino + Queso + Carne + Aguacate"," $103");
 
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonconpollo.png")
-    + insertarContenidoImagen_url("Sirlon con Pollo", "descripcion","$103");
+    + insertarContenidoImagen_url("Sirlon con Pollo",  "Mayonesa + Ketchup + Lechuga + Tomate + Pollo + Queso","$103");
 
-    retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonconpollo.png")
-    + insertarContenidoImagen_url("Sirlon con Pollo", "descripcion","$103");
     return retornarhamburguesasLibra;
 }
 
@@ -477,12 +472,32 @@ function mostrarExtras()
     retornarExtras += insertarImagen_url("extras/ranch.png")
     + insertarContenidoImagen_url("Ranch", "","$10");
 
+    retornarExtras += insertarImagen_url("extras/queso.png")
+    + insertarContenidoImagen_url("Queso", "","$15");
+
+    retornarExtras += insertarImagen_url("extras/winnie.png")
+    + insertarContenidoImagen_url("Winnie", "","$10");
+
+    retornarExtras += insertarImagen_url("extras/tocino.png")
+    + insertarContenidoImagen_url("Tocino", "","$15");
+
+    retornarExtras += insertarImagen_url("extras/salchicha.png")
+    + insertarContenidoImagen_url("Salchicha", "","$15");
+
+    retornarExtras += insertarImagen_url("extras/salsas.png")
+    + insertarContenidoImagen_url("Salsa", "Escojer","$15");
+    
+    retornarExtras+=mostrarMenuSalsas("salsas/salsas.png");
+
+
+
     return retornarExtras;
 }
 
 
 //FILTRAR compartida
-function filtrarComidas(termino) {
+function filtrarComidas(termino) 
+{
 
 
     if(termino != "")
