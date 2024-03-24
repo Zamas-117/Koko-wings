@@ -407,6 +407,9 @@ function mostrarTodasLasHamburguesasLibra()
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/sirlonBBQMango.png")
     + insertarContenidoImagen_url("Sirloin BBQ/Mango Habanero",  "Mayonesa + BBQ + Mango Habanero + Doble Tocino + Jamon + 2 Quesos"," $83");
 
+    retornarhamburguesas += insertarImagen_url("hamburguesas/especial.png")
+    + insertarContenidoImagen_url("Especial", "3 Liquidos + Lechuga + Cebolla + Tomate +  Doble Tocino + Winnie Americano + Jamon + Queso + Aguacate"," $93");
+
     retornarhamburguesasLibra += insertarImagen_url("hamburguesas/kokoburger.png")
     + insertarContenidoImagen_url("KOKO Burger", "3 Liquidos + Lechuga + Cebolla + Tomate + Queso Derretido + Salsicha para Asar + Doble Tocino + Queso + Carne + Aguacate"," $103");
 
