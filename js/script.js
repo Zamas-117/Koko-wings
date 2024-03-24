@@ -286,7 +286,7 @@ function mostrarTodasLasOfertas()
     + insertarContenidoImagen_url("Combo 3", "(10 pz) Alitas + papas chicas + soda de sabor"," $130");
 
     retornarOfertas += insertarImagen_url("hotdog/hotdog_logo.png")
-    + insertarContenidoImagen_url("Combo 4", "2 Hotdogs + papas chicas + soda de sabor"," $110");
+    + insertarContenidoImagen_url("Combo 4", "2 Dogos + papas chicas + soda de sabor"," $110");
 
     retornarOfertas += insertarImagen_url("boneles/boneles_logo.png")
     + insertarContenidoImagen_url("Boneless Grandes", "(910 gr) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!"," $280");
@@ -311,19 +311,19 @@ function mostrarTodosLosBoneles()
 {
     var retornarBoneles="";
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Chico (310 gr)", "Zanahorias con aderezo Ranch + Apio","$95");
+    + insertarContenidoImagen_url("Chico (310 gr)", "Zanahorias con aderezo Ranch + Apio","$100");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Mediano (610 gr)", "Zanahorias con aderezo Ranch + Apio"," $185");
+    + insertarContenidoImagen_url("Mediano (610 gr)", "Zanahorias con aderezo Ranch + Apio"," $195");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Grande (910 gr)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $280");
+    + insertarContenidoImagen_url("Grande (910 gr)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $295");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Extra Grande (1.30 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $375");
+    + insertarContenidoImagen_url("Extra Grande (1.30 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $395");
 
     retornarBoneles += insertarImagen_url("boneles/boneles_logo.png")
-    + insertarContenidoImagen_url("Familiar (1.60 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $470");
+    + insertarContenidoImagen_url("Familiar (1.60 kg)", "Zanahorias con aderezo Ranch + Apio y papas fritas chicas ¡GRATIS!"," $490");
 
     return retornarBoneles;
 }
@@ -439,7 +439,7 @@ function mostrarTodasLasPapasFritas()
 function mostrarTodasLosHotDogs()
 {
     var retornarHotDogs="";
-    retornarHotDogs += insertarImagen_url("hotdog/hotdog_logo.png")
+    retornarHotDogs += insertarImagen_url("hotdog/hotdogsencillo.png")
     + insertarContenidoImagen_url("Hot dog sencillo", "Mostaza + Ketchup + Mayonesa + Tomate + Curtidos","$25");
 
     retornarHotDogs += insertarImagen_url("hotdog/hotdog_logo.png")
@@ -476,7 +476,7 @@ function mostrarExtras()
 {
     var retornarExtras="";
     retornarExtras += insertarImagen_url("extras/ranch.png")
-    + insertarContenidoImagen_url("Ranch", "","$10");
+    + insertarContenidoImagen_url("Ranch", "","$15");
 
     retornarExtras += insertarImagen_url("extras/queso.png")
     + insertarContenidoImagen_url("Queso", "","$15");
