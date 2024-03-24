@@ -377,11 +377,11 @@ function mostrarTodasLasHamburguesas()
     retornarhamburguesas += insertarImagen_url("hamburguesas/hamburgesadepollo.png")
     + insertarContenidoImagen_url("Hamburguesa de Pollo", "Mayonesa + Ketchup + Lechuga + Tomate + Pollo"," $78");
 
-    retornarhamburguesas += insertarImagen_url("hamburguesas/sirlontriple.png")
-    + insertarContenidoImagen_url("Sirlon Triple", "3 Liquidos + Lechuga + Cebolla + Tomate +  3 Quesos + 3 Carnes"," $69");
-
     retornarhamburguesas += insertarImagen_url("hamburguesas/especial.png")
-    + insertarContenidoImagen_url("Especial", "3 Liquidos + Lechuga + Cebolla + Tomate +  Doble Tocino + Winnie Americano + Jamon + Queso + Carne + Aguacate"," $83");
+    + insertarContenidoImagen_url("Especial", "3 Liquidos + Lechuga + Cebolla + Tomate +  Doble Tocino + Winnie Americano + Jamon + Queso + Aguacate"," $88");
+
+    retornarhamburguesas += insertarImagen_url("hamburguesas/sirlontriple.png")
+    + insertarContenidoImagen_url("Sirlon Triple", "3 Liquidos + Lechuga + Cebolla + Tomate +  3 Quesos + 3 Carnes"," $83");
 
     retornarhamburguesas += insertarImagen_url("hamburguesas/kokoburger.png")
     + insertarContenidoImagen_url("KOKO Burger", "3 Liquidos + Lechuga + Cebolla + Tomate + Queso Derretido + Salsicha para Asar + Doble Tocino + Queso + Carne + Aguacate"," $96");
