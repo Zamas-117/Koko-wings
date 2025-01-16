@@ -290,7 +290,7 @@ function mostrarTodasLasOfertas() {
     insertarContenidoImagen_url(
       "Combo 1",
       "Sirloin Sencilla + papas chicas + soda de sabor",
-      " $95"
+      " $105"
     );
 
   retornarOfertas +=
@@ -298,15 +298,15 @@ function mostrarTodasLasOfertas() {
     insertarContenidoImagen_url(
       "Combo 2",
       "Boneless Chicos + papas chicas + soda de sabor",
-      " $140"
+      " $155"
     );
 
   retornarOfertas +=
     insertarImagen_url("alitas/alitas.png") +
     insertarContenidoImagen_url(
       "Combo 3",
-      "(10 pz) Alitas + papas chicas + soda de sabor",
-      " $130"
+      "(12 pz) Alitas + papas chicas + soda de sabor",
+      " $160"
     );
 
   retornarOfertas +=
@@ -322,23 +322,23 @@ function mostrarTodasLasOfertas() {
     insertarContenidoImagen_url(
       "Boneless Grandes",
       "(910 gr) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
-      " $280"
+      " $325"
     );
 
   retornarOfertas +=
     insertarImagen_url("boneles/boneles_logo.png") +
     insertarContenidoImagen_url(
       "Boneless Extra Grandes",
-      "(1.30 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
-      " $375"
+      "(1.20 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
+      " $430"
     );
 
   retornarOfertas +=
     insertarImagen_url("boneles/boneles_logo.png") +
     insertarContenidoImagen_url(
       "Boneless Familiares",
-      "(1.60 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
-      " $470"
+      "(1.50 kg) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
+      " $520"
     );
 
   retornarOfertas +=
@@ -346,7 +346,7 @@ function mostrarTodasLasOfertas() {
     insertarContenidoImagen_url(
       "Alitas",
       "(40 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
-      " $348"
+      " $400"
     );
 
   retornarOfertas +=
@@ -354,7 +354,7 @@ function mostrarTodasLasOfertas() {
     insertarContenidoImagen_url(
       "Alitas",
       "(50 pz) Zanahorias con aderezo Ranch, Apio y papas fritas chicas ¡GRATIS!",
-      "$435"
+      "$500"
     );
 
   return retornarOfertas;
